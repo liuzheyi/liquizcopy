@@ -1,2 +1,2 @@
 # liquizcopy
-This is a copy of liquiz
+This is a copy of liquiz.
