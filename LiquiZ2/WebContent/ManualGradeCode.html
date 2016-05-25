@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LiquiZ: Manually Grade Homework</title>
+<meta charset="utf-8"/>
+<script src="assets/js1/func.js"></script>
+<script>
+function thisPage() {
+	  //alert( document.getElementById("code"));
+	    document.getElementById("code").value=page.code;
+	    createSelectInDiv(document.getElementById("a"), page.sel);
+	}
+//loadData("assets/js1/ManualGradeCode.json")
+loadData("ManualGradeCode_ajax.jsp")
+</script>
+</head>
+<body>
+<h1>Testing</h1>
+<table>
+<tr><td>Student</td><td id="student">Student-name</td></tr>
+<tr>
+<td><input type="button" value="Run"/></td>
+<td><input type="button" value="Reject"/></td>
+<td><input type="button" value="Grade" onClick="submitComments()"/></td>
+<td><input type="button" value="Comment"/></td>
+</tr>
+</table>
+<div class="codebox">
+<textarea id="code" rows="10" cols="80" name="code" onMouseUp="highlight(this)" ></textarea>
+<div id="a">
+</div>
+</div>
+</body>
+</html>
